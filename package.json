@@ -1,0 +1,35 @@
+{
+  "name": "bodhi",
+  "version": "0.1.0",
+  "description": "Kiosk Dashboard for Energy Awareness",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^0.37.8",
+    "install": "^0.7.3",
+    "npm": "^3.8.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptrollins/bodhi.git"
+  },
+  "keywords": [
+    "Electron",
+    "Ionic",
+    "energy",
+    "NRGIA",
+    "Bodhi"
+  ],
+  "author": "NRGIA",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/ptrollins/bodhi/issues"
+  },
+  "dependencies": {
+    "angular-chart.js": "^0.10.2",
+    "chart.js": "^2.1.2",
+    "highcharts": "^4.2.5"
+  }
+}

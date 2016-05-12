@@ -1,0 +1,83 @@
+<ion-view view-title="Fortum">
+    <ion-content scroll="false">
+
+        <div class="row" id="header-row" style="height: 5vh; background-color: #1a433f">
+            <div style="float: left; width: 50%" align="center"><img src="img/fortum.png"></div>
+            <div style="float: right; width: 50%" align="center"><img src="img/acre.png"></div>
+            <!--img src="img/fortum.png" height="70vh"-->
+        </div>
+
+        <div class="row responsive-lg" id="power-graph-row" style="background-color:#51b497;">
+            <div class="col" style="margin: 0; padding: 5px">
+                <highchart id="chart1" config="chartConfig"></highchart>
+
+
+                <button
+                        style="background-color: #51b497; height: 50vh; width: 100%;">
+
+                    <canvas id="powerChart" height="400"; width="1400"></canvas>
+                    <!--canvas id="doughnut" class="chart chart-doughnut" chart-data="data" chart-labels="labels"
+                            chart-options="options" chart-colours="colors" width="300%">
+                    </canvas-->
+                </button>
+                <!--button
+                        style="height: 205px; width: 205px; float: left;   font-size: 10vh; z-index: 1; position: relative; background-size: 100%;
+                        background-color: white; font-weight: bold;"
+                        ng-style="{color: powerColor}"
+                        ng-style="{'background-image': 'url('+dial+')'}">{{powerUsed}}<br>kWh
+                </button-->
+            </div>
+        </div>
+        <div class="row responsive-md" id="power-reading-row" style="background-color:#49997B;height: 10vh; width: 100%;">
+            <div style="line-height: 10vh; font-size: 5vh; display: block; position: absolute; left: 30%; color:white">50 WATTS
+            </div>
+        </div>
+
+
+        <div class="row responsive-md" id="bottom-display-row" style="background-color:#51b497;">
+
+            <div class="col-10" style="margin: 0px; padding: 5px"></div>
+
+            <div class="col-33" style="margin: 0px; padding: 5px">
+                <div class="row responsive-md"  style="height:10vh; background-color:#51b497;"></div>
+
+                <button ng-click="setTempUnit()"
+                        style="background-size: 100%; background: #49997B no-repeat;
+                        height: 15vh; width: 100%; font-size: 13vh; font-weight: bold; color: white;">
+
+                </button>
+                <canvas id="tempChart" style="height: 100%; width: 30%"></canvas>
+                <div class="row responsive-md"  style="height:10vh; background-color:#51b497;"></div>
+
+            </div>
+
+            <div class="col" style="width:14%"></div>
+
+            <div class="col-33" style="margin: 0px; padding: 5px">
+                <div class="row responsive-md"  style="height:10vh; background-color:#51b497;"></div>
+
+                <button ng-click="powerUp()"
+                         style="background-color: #49997B; background-size: 100%; background-repeat:no-repeat;
+                         height: 15vh; width: 100%">
+                    <img height="80%" src="{{cloud}}">
+                </button>
+                <div class="row responsive-md"  style="height:10vh; background-color:#51b497;"></div>
+
+                <!--button ng-click="powerUp()"
+                        style="height: 205px; width: 205px; float: left;  color: black; font-size: 13vh; font-weight: bold; z-index: 1; position: relative; background-size: 100%; background-color: white;"
+                        ng-style="{'background-image': 'url('+outlet+')'}">x{{outletsUsed}} Devices
+                </button-->
+            </div>
+
+            <div class="col-10" style="margin: 0px; padding: 5px"></div>
+
+        </div>
+
+
+        <!--ion-list>
+          <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+            {{playlist.title}}
+          </ion-item>
+        </ion-list-->
+    </ion-content>
+</ion-view>
